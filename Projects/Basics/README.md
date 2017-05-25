@@ -11,15 +11,15 @@ be able to use all along the program.
 
 ## Objectives
 
-> ⋅⋅* C Basics
-> ⋅⋅* Libc
-> ⋅⋅* Static library generation
+⋅⋅* C Basics
+⋅⋅* Libc
+⋅⋅* Static library generation
 
 ## Skills
 
-> ⋅⋅* Rigor
-> ⋅⋅* Algorithms & AI
-> ⋅⋅* Imperative programming
+⋅⋅* Rigor
+⋅⋅* Algorithms & AI
+⋅⋅* Imperative programming
 
 ## Licensing
 Created by The Mighty Thor
