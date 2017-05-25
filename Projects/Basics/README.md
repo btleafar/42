@@ -17,9 +17,9 @@ be able to use all along the program.
 
 ## Skills
 
-> Rigor
-> Algorithms & AI
-> Imperative programming
+* Rigor
+* Algorithms & AI
+* Imperative programming
 
 ## Licensing
 Created by The Mighty Thor
