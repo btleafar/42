@@ -1,3 +1,3 @@
 # Basic projects map display
 
-![Basics](../Files/Maps/Basics_Projects.png)
+![Basics](https://github.com/idevHive/42/blob/master/Files/Maps/Basics_Projects.png)
