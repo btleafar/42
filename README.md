@@ -1,6 +1,6 @@
 # École 42
 
-![42 Logo](Files/Resources/42-logo.png)
+![42 Logo](Files/Resources/Images/42-logo.png)
 
 ## Table of Contents
 
