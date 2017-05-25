@@ -1,6 +1,6 @@
 # École 42
 
-![42 Logo](nfs://nfs-student-1-1/nfs/munki_repo/icons/42.png)
+![42 Logo](Files/Resources/42-logo.png)
 
 ## Table of Contents
 
