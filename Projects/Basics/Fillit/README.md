@@ -23,5 +23,5 @@ and to determine the smallest possible square that can accommodate them.
 * Unix
 
 ## Licensing
-Project Design Created by:
-Mother of Dragon (and Moulinette) Ly, Real Platinum God Noich, The Mighty Thor
+> Project Design Created by:
+>> Mother of Dragon (and Moulinette) Ly, Real Platinum God Noich, The Mighty Thor
