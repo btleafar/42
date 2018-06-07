@@ -1,0 +1,49 @@
+For now, let's focus on just doing up to part 2 from the correction page.
+Let's divide the window like this (with ncurses):
+
++==============================================================================+
+|| UID                                                                        ||
+|| Hostname                                                                   ||
+||                                                                            ||
+|| OS Info                                                                    ||
+||                                                                            ||
+|| Date and Time (YYYY-MM-DD HH:MM:SS)                                        ||
+||                                                                            ||
+|| -------------------------------------------------------------------------- ||
+||                                                                            ||
+|| CPU Info (name, speed, usage, tasks, etc...)                               ||
+|| RAM Info (total space, available space, speed, etc...)                     ||
+||                                                                            ||
++==============================================================================+
+
+Part 1 doesn't seem so hard, it's only:
+
+-> HostnameModule
+	- whoami   : get the uid
+	- hostname : get hostname
+
+-> OSInfoModule
+	- system_profiler SPSoftwareDataType : get everything (we can use this
+	                                       instead of using whoami and hostname)
+
+-> TimeModule
+	- date '+%Y-%M-%D %H:%m:%S' : get the date and time in international format
+
+///////////////
+
+Part 2 is a bit harder:
+
+-> CPUModule
+	- sysctl -n machdep.cpu.brand_string : get cpu name and basic info
+	- ps -A -o %cpu | awk '{s+=$1} END {print s "%"}' : get current usage
+
+-> RAMModule
+	- system_profiler SPMemoryDataType : get ram' spec info
+	- top -l 1 -s 0 | grep PhysMem : get usage
+
+* I was thinking of maybe using system() ??
+I know it's not the best thing, but we can get something working quickly using
+it. I think if we do this, we can get a good grade (probably around 80%-ish,
+according to the correction page)
+The correction page doesn't say that system() is forbidden, so we can use that
+to defend our code, jic
