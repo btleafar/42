@@ -16,6 +16,6 @@ students, without teachers. It can be done, and it works.
 
 #### To be Completed
 
-* [C++ Piscine](https://github.com/jraleman/42_Piscine-CPP)
+* [C++ Piscine](https://github.com/idevHive/42/tree/master/Piscines/CPP)
 * [Starfleet](https://github.com/jraleman/42_Piscine-Starfleet)
 * [PHP Piscine](https://github.com/jraleman/42_Piscine-PHP)
