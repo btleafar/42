@@ -47,7 +47,7 @@ then reset the system time.
 on the disk (don't do it while the filesystem is mounted).
 
 ------------------------------------------
-#### [CHMOD](https://en.wikipedia.org/wiki/Chmod)
+#### Change file permissions with [CHMOD](https://en.wikipedia.org/wiki/Chmod)
 The chmod command is used to change the permissions of a file or directory.
 To use it, you specify the desired permission settings and the file or files
 that you wish to modify. There are two ways to specify the permissions, but
@@ -70,8 +70,8 @@ r-- = 100 in binary = 4
 ```
 
 Example:
-```bash
-chmod 455 myfile
+```
+$ chmod 455 testDay00
 ```
 
 Here the digits 4, 5, and 5 each individually represent the permissions for the
@@ -99,8 +99,8 @@ So 7 is the combination of permissions 4+2+1 (read, write, and execute),
 |  0  | none					| 000 | --- |
 
 For more detail read `man` entry of `chmod`:
-```bash
-man chmod
+```
+$ man chmod
 ```
 ------------------------------------------
 ### [back](https://github.com/idevHive/42/tree/master/Piscines/C/Day00)
