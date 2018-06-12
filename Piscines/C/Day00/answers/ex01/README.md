@@ -1,4 +1,4 @@
-### [back](https://github.com/idevHive/42/tree/master/Piscines/C/Day00)
+### [back](https://github.com/idevHive/42/tree/master/Piscines/C/Day00/files/ex01)
 
 ------------------------------------------
 #### Objective:
@@ -103,4 +103,4 @@ For more detail read `man` entry of `chmod`:
 $ man chmod
 ```
 ------------------------------------------
-### [back](https://github.com/idevHive/42/tree/master/Piscines/C/Day00)
+### [back](https://github.com/idevHive/42/tree/master/Piscines/C/Day00/files/ex01)
