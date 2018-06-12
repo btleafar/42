@@ -26,7 +26,7 @@ each symbol/char added sums one in size
 #### Change the timestamp (Except ctime/Change time)
 Using the command [TOUCH](https://linux.die.net/man/1/touch):
 ```
-$ touch -a -m -t 202406012342.00
+$ touch -a -m -t 202406012342.00 file_name.ext
 ```
 Where:
 ```
