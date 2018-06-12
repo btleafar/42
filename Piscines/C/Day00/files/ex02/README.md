@@ -36,3 +36,6 @@ example.
 > 3. Don’t worry about what you’ve got instead of "XX".
 > 4. A year will be accepted instead of the time, on the timestamp of the
 files.
+> 5. If you find yourself without knowing how to create a folder in UNIX based
+systems I can give you a short link
+[here](http://mally.stanford.edu/~sr/computing/basic-unix.html)

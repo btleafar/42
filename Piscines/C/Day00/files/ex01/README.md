@@ -29,6 +29,9 @@ create the file to be submitted: tar -cf testDay00.tar testDay00.
 your group.
 > 2. A year will be accepted instead of the time, on the timestamp of the
 file.
+> 3. If you find yourself without knowing how to create a file in UNIX based
+systems I can give you a short link
+[here](https://www.quora.com/How-do-I-create-a-file-in-a-directory-in-Unix)
 
 #### Find the answer
 [here](https://github.com/idevHive/42/blob/master/Piscines/C/Day00/answers/ex01/README.md)
