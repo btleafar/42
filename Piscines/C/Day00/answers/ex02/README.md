@@ -16,12 +16,22 @@ $
 ```
 
 ------------------------------------------
-#### We can refer the previous ex01 for all the steps that we must repeat:
-Go here for the __previous__**
-[answer](https://github.com/idevHive/42/blob/master/Piscines/C/Day00/answers/ex01/README.md)
-But is better to leave it to the end, and for now focus on how to create all
-the folders and files accordingly with the requirements and come back to it
-latter.
+#### Command `ls -l` output explanation
+
+-rwxrw-r--    10    root   root 2048    Jan 13 07:11 afile.exe
+?UUUGGGOOOS   00  UUUUUU GGGGGG ####    └─ date stamp and file name are obvious ;-)
+↑ ↑  ↑  ↑ ↑    ↑      ↑      ↑    ↑
+│ │  │  │ │    │      │      │    └─── File Size
+│ │  │  │ │    │      │      └──────── Group Name (for example, Users, Administrators, etc)
+│ │  │  │ │    │      └─────────────── Owner Acct
+│ │  │  │ │    └────────────────────── Link count (what constitutes a "link" here varies)
+│ │  │  │ └─────────────────────────── Alternative Access (blank means none defined, anything else varies)
+│ └──┴──┴───────────────────────────── Read, Write and Special access modes for [U]ser, [G]roup, and [O]thers (everyone else)
+└───────────────────────────────────── File type flag -
+
+>The permissions (mode) flags (UUUGGGOOO) are three sets of three chars, where
+the first set is "User" (i.e., Owner), the second set is "Group" and the third
+set is "Others" (i.e., everyone else; anyone who is neither Owner nor Group).
 
 ------------------------------------------
 #### How to create all that we need
@@ -29,8 +39,13 @@ latter.
 > * Remember that we use `touch` and `mkdir` to create files and folders
 respectively.
 
-But now to the new part: we need to create a link for the folder `test0`
+But now to the new part: we need to create a _soft link_ for the folder `test0`
 > That is what the symbol `->` means.
+
+And if we pay attention to detail we notice that `test5` is a __hard link__**
+of the file `test3`
+> We determine that due to the __link count__** size on both files plus the
+fact that they share the same `date-stamp`
 
 And as a review of the difference between __hard__** and __soft__** links we can
 review this image:
@@ -55,22 +70,36 @@ still points to the same contents, and is thus unaffected, whereas
 pros/cons of each.
 
 ------------------------------------------
-#### Command `ls -l` output explanation
+#### Changing the timestamp of a symlink
+We just need to add the [OPTION] -h to `touch`
+```
+touch -h -a -m -t 201806012220.00 test6
+```
+> Use `man touch` for more info.
 
--rwxrw-r--    10    root   root 2048    Jan 13 07:11 afile.exe
-?UUUGGGOOOS   00  UUUUUU GGGGGG ####    └─ date stamp and file name are obvious ;-)
-↑ ↑  ↑  ↑ ↑    ↑      ↑      ↑    ↑
-│ │  │  │ │    │      │      │    └─── File Size
-│ │  │  │ │    │      │      └──────── Group Name (for example, Users, Administrators, etc)
-│ │  │  │ │    │      └─────────────── Owner Acct
-│ │  │  │ │    └────────────────────── Link count (what constitutes a "link" here varies)
-│ │  │  │ └─────────────────────────── Alternative Access (blank means none defined, anything else varies)
-│ └──┴──┴───────────────────────────── Read, Write and Special access modes for [U]ser, [G]roup, and [O]thers (everyone else)
-└───────────────────────────────────── File type flag -
+------------------------------------------
+#### Change the FILE SIZE + timestamp + permissions
+Go here for the __previous__**
+[answer](https://github.com/idevHive/42/blob/master/Piscines/C/Day00/answers/ex01/README.md)
+> But is better to leave it to the end, and for now focus on how to create all
+the folders and files accordingly with the requirements and come back to it
+latter.
 
->The permissions (mode) flags (UUUGGGOOO) are three sets of three chars, where
-the first set is "User" (i.e., Owner), the second set is "Group" and the third
-set is "Others" (i.e., everyone else; anyone who is neither Owner nor Group).
+------------------------------------------
+#### How do file permissions apply to symlinks?
+It depends on how you call `chmod` and the platform you are running on.
+For example, on a Linux system, `man chmod` says this:
+>**chmod**  never changes the permissions of symbolic links; the **chmod**
+system call cannot change their permissions.  This is not a problem since the
+permissions of symbolic links are never used.  However, for each symbolic link
+listed on the command line, **chmod** changes the permissions of the pointed-to
+file. In contrast, **chmod** ignores symbolic links encountered during recursive
+directory traversals.
+
+However, on a Mac, _chmod_ can be used to modify the permissions of a symbolic
+link using options such as this (from `man chmod`):
+>**-h** If the file is a symbolic link, change the mode of the link itself
+rather than the file that the link points to.
 
 ------------------------------------------
 ### [back](https://github.com/idevHive/42/tree/master/Piscines/C/Day00/files/ex02)
