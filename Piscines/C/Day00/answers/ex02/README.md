@@ -17,7 +17,7 @@ $
 
 ------------------------------------------
 #### Command `ls -l` output explanation
-
+```
 -rwxrw-r--    10    root   root 2048    Jan 13 07:11 afile.exe
 ?UUUGGGOOOS   00  UUUUUU GGGGGG ####    └─ date stamp and file name are obvious ;-)
 ↑ ↑  ↑  ↑ ↑    ↑      ↑      ↑    ↑
@@ -28,7 +28,7 @@ $
 │ │  │  │ └─────────────────────────── Alternative Access (blank means none defined, anything else varies)
 │ └──┴──┴───────────────────────────── Read, Write and Special access modes for [U]ser, [G]roup, and [O]thers (everyone else)
 └───────────────────────────────────── File type flag -
-
+```
 >The permissions (mode) flags (UUUGGGOOO) are three sets of three chars, where
 the first set is "User" (i.e., Owner), the second set is "Group" and the third
 set is "Others" (i.e., everyone else; anyone who is neither Owner nor Group).
@@ -50,8 +50,7 @@ fact that they share the same `date-stamp`
 And as a review of the difference between __hard__** and __soft__** links we can
 review this image:
 
-![alt text][link]
-[link]: https://github.com/idevHive/42/tree/master/Piscines/C/Day00/resources/picts/hard-link_vs_soft-link.jpg
+![linktypes](https://github.com/idevHive/42/tree/master/Piscines/C/Day00/resources/picts/hard-link_vs_soft-link.jpg "Hard Link vs Soft Link")
 
 Here is how we get to that picture:
 1. Create a name `myfile.txt` in the file system that points to a new inode
