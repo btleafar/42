@@ -10,7 +10,7 @@ $
 ```
 
 ------------------------------------------
-#### Make size of file "40"
+#### Make file size = 40
 When we create the file `testDay00` we just need to open it any text editor
 like `vim, atom, code or subl` and add `40` characters/symbols.
 If you have any doubt take a look of the at the
