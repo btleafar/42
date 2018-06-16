@@ -29,7 +29,7 @@ latter.
 > * Remember that we use `touch` and `mkdir` to create files and folders
 respectively.
 
-But now to the new part we need to create a link for the folder `test0`
+But now to the new part: we need to create a link for the folder `test0`
 > That is what the symbol `->` means.
 
 And as a review of the difference between __hard__** and __soft__** links we can
@@ -53,6 +53,24 @@ Look what will now happen if `myfile.txt` is deleted (or moved): `my-hard-link`
 still points to the same contents, and is thus unaffected, whereas
 `my-soft-link` now points to nothing. Is up to future tasks to evaluate the
 pros/cons of each.
+
+------------------------------------------
+#### Command `ls -l` output explanation
+
+-rwxrw-r--    10    root   root 2048    Jan 13 07:11 afile.exe
+?UUUGGGOOOS   00  UUUUUU GGGGGG ####    └─ date stamp and file name are obvious ;-)
+↑ ↑  ↑  ↑ ↑    ↑      ↑      ↑    ↑
+│ │  │  │ │    │      │      │    └─── File Size
+│ │  │  │ │    │      │      └──────── Group Name (for example, Users, Administrators, etc)
+│ │  │  │ │    │      └─────────────── Owner Acct
+│ │  │  │ │    └────────────────────── Link count (what constitutes a "link" here varies)
+│ │  │  │ └─────────────────────────── Alternative Access (blank means none defined, anything else varies)
+│ └──┴──┴───────────────────────────── Read, Write and Special access modes for [U]ser, [G]roup, and [O]thers (everyone else)
+└───────────────────────────────────── File type flag -
+
+>The permissions (mode) flags (UUUGGGOOO) are three sets of three chars, where
+the first set is "User" (i.e., Owner), the second set is "Group" and the third
+set is "Others" (i.e., everyone else; anyone who is neither Owner nor Group).
 
 ------------------------------------------
 ### [back](https://github.com/idevHive/42/tree/master/Piscines/C/Day00/files/ex02)
