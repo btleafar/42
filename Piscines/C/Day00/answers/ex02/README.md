@@ -50,7 +50,7 @@ fact that they share the same `date-stamp`
 And as a review of the difference between __hard__** and __soft__** links we can
 review this image:
 
-![linktypes](../../../resources/picts/hard-link_vs_soft-link.jpg "Hard Link vs Soft Link")
+![linktypes](https://raw.githubusercontent.com/idevHive/42/master/Piscines/C/Day00/resources/picts/hard-link_vs_soft-link.jpg "Hard Link vs Soft Link")
 
 Here is how we get to that picture:
 1. Create a name `myfile.txt` in the file system that points to a new inode
