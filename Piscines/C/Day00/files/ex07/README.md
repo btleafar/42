@@ -17,7 +17,7 @@ character.
 ```
 What has not been asked for should not be done!
 
-__RTFM!__**
+RTFM!
 ```
 
 #### Find the answer
