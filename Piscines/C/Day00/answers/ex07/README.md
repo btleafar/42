@@ -3,14 +3,14 @@
 ------------------------------------------
 #### If we RTFM!(`man ls`) we will see that:
 ```
-**-t**	sort by modification time, newest first
-**-r**	**--reverse**
-		reverse order while sorting
-**-h**	**--human-readable**
-		with **-l** and **-s**, print sizes like 1K 234M 2G etc.
-**-p**	**--indicator-style**=slash
-		*append / indicator to directories*
-**-m**	*fill width with a comma separated list of entries*
+-t:	sort by modification time, newest first
+-r:	--reverse
+	reverse order while sorting
+-h:	--human-readable
+	with -l and -s, print sizes like 1K 234M 2G etc.
+-p:	--indicator-style=slash
+	append / indicator to directories
+-m:	fill width with a comma separated list of entries
 ```
 
 > Here we encounter a problem, because at least with the command `ls` we can't
@@ -31,11 +31,11 @@ That said, modern Linux filesystems, such as ext4, Btrfs and JFS, do store the
 file creation time (aka birth time), but use different names for the field in
 question:
 ```
-ufs2	→	st_birthtime
-zfs		→	crtime
-ext4	→	crtime
-btrfs	→	otime
-jfs		→	di_otime
+ufs2   →  st_birthtime
+zfs    →  crtime
+ext4   →  crtime
+btrfs  →  otime
+jfs    →  di_otime
 ```
 However
 , [currently Linux does not provide a kernel API for accessing the file creation times](https://lwn.net/Articles/397442/)
