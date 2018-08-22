@@ -29,5 +29,4 @@ commas without spaces.
 
 > Notes: Search for man groups, man tr and piping
 
-#### As a last resort, find the answer
-[here](https://github.com/idevHive/42/blob/master/Piscines/C/Day00/answers/ex01/README.md)
+#### As a last resort, find the answer [here](https://github.com/idevHive/42/blob/master/Piscines/C/Day01/answers/ex01/README.md)
