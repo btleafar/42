@@ -1,8 +1,6 @@
 ## Exercise 02 : find_sh.sh
 
-|:-------------------------------------:|
 |               Exercise 02             |
-|               find_sh.sh              |
 |:--------------------------------------|
 | Turn-in directory : ex02/             |
 | Files to turn in : find_sh.sh         |

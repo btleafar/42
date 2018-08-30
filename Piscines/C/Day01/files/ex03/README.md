@@ -1,8 +1,6 @@
 ## Exercise 03 : count_files
 
-|:-------------------------------------:|
 |               Exercise 03             |
-|             count_files.sh            |
 |:--------------------------------------|
 | Turn-in directory : ex03/             |
 | Files to turn in : count_files.sh     |

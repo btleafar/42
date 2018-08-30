@@ -1,7 +1,7 @@
 ### [back](https://github.com/idevHive/42/tree/master/Piscines/C/Day01/files/ex04)
 
 ------------------------------------------
-####First lets see the options for IFCONFIG on `man ifconfig`
+#### First lets see the options for IFCONFIG on `man ifconfig`
 * Due to the present requirements we can see that we need the flag[OPTION] `-a`
 because that one `display all interfaces which are currently available,
 even if down`
@@ -62,7 +62,7 @@ wlp3s0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
 		TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 ```
 ------------------------------------------
-####Here are a few ways:
+#### Here are a few ways:
 
 * __grep__. There are various regular expressions that will pick these up. Here,
 I am looking for 5 repetitions of 2 letters or numbers followed by a colon, then

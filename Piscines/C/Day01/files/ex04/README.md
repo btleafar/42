@@ -1,8 +1,6 @@
 ## Exercise 04 : MAC
 
-|:-------------------------------------:|
 |               Exercise 04             |
-|                  MAC.sh               |
 |:--------------------------------------|
 | Turn-in directory : ex04/             |
 | Files to turn in : MAC.sh             |
