@@ -65,5 +65,6 @@ ifconfig -a | grep ether | awk '{print $2}'
 I chose this option since my MAC addresses are next to the word "ether" so the
 option grep gives me back the line where this word happens, and next with awk
 I can select the second group of word per line, which are the MACs.
+
 ------------------------------------------
 ### [back](https://github.com/idevHive/42/tree/master/Piscines/C/Day01/files/ex04)
