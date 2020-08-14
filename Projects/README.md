@@ -8,7 +8,7 @@ As of now, it includes:
 * General
 	- [libft](https://github.com/rtbalabukha/42/tree/master/Projects/Basics/Libft)
 	- [fillit](https://github.com/rtbalabukha/42/tree/master/Projects/Basics/Fillit)
-	- [get_next_line](https://github.com/rtbalabukha/42_get_next_line)
+	- [get_next_line](https://github.com/rtbalabukha/42/tree/master/Projects/Basics/get_next_line)
 
 * Graphics
 	- [fdf](https://github.com/rtbalabukha/42_FDF/)
