@@ -6,8 +6,8 @@ As of now, it includes:
 ### List
 
 * General
-	- [libft](https://github.com/rtbalabukha/42_Libft)
-	- [fillit](https://github.com/rtbalabukha/42_Fillit)
+	- [libft](https://github.com/rtbalabukha/42/tree/master/Projects/Basics/Libft)
+	- [fillit](https://github.com/rtbalabukha/42/tree/master/Projects/Basics/Fillit)
 	- [get_next_line](https://github.com/rtbalabukha/42_get_next_line)
 
 * Graphics

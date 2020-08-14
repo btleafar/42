@@ -25,3 +25,32 @@ and to determine the smallest possible square that can accommodate them.
 ## Licensing
 > Project Design Created by:
 >> Mother of Dragon (and Moulinette) Ly, Real Platinum God Noich, The Mighty Thor
+
+## Getting Started
+
+### Compiling
+
+Run the following commands:
+
+* To compile
+	- `make`
+* To remove objects:
+	- `make clean`
+* To remove objects and binary file (program):
+	- `make fclean`
+* To re-compile:
+	- `make re`
+
+### Executing
+
+To execute the program:
+
+`./fillit <fillit-file>`
+
+#### Try it!
+
+Try running the following:
+
+`./fillit Test_Files/invalids/invalid_char`
+
+`./fillit Test_Files/valids/valid_0`

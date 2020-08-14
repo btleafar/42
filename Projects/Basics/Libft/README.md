@@ -24,3 +24,24 @@ finish this project is in the  [Resources](https://github.com/idevHive/42/tree/m
 
 ## Licensing
 Created by The Mighty Thor
+
+## Getting Started
+
+### Compiling
+
+Run the following commands:
+
+* To compile
+	- `make`
+* To remove objects:
+	- `make clean`
+* To remove objects and binary file (program):
+	- `make fclean`
+* To re-compile:
+	- `make re`
+
+### Executing
+
+To test the library, compile with your program. i.e.
+
+`./program libft.a`
