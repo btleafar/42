@@ -13,17 +13,8 @@ As of now, it includes:
 * Graphics
 	- [fdf](https://github.com/rtbalabukha/42/tree/master/Projects/Graphics/FDF)
 
-* Algorithm
-	- [ft_printf](https://github.com/rtbalabukha/42_ft_printf/)
-
 * Group
-	- [rushes](https://github.com/rtbalabukha/42_Rushes/)
 	- [ft_db](https://github.com/rtbalabukha/42_ft_db/)
-
-* Miscellaneous
-	- [dashes](https://github.com/rtbalabukha/42_Dashes/)
-	- [hercules](https://github.com/rtbalabukha/42_Hercules/)
-	- [walking_marvin](https://github.com/rtbalabukha/42_Walking_Marvin/)
 
 ## As a reference this is the full map displaying all the available projects when you start @ 42
 
