@@ -29,4 +29,4 @@ the skills they contain, like:
 Attribution 3.0 license, and the underlying source code used to format and
 display that content is licensed under the MIT license.*
 
-Copyright (c) 2020 Rafael Torres Balabukha
+Copyright (c) 2022 Rafael Torres Balabukha
