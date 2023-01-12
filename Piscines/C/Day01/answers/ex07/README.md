@@ -10,4 +10,14 @@ We still need to deconstruct the problem and explain the solution for...
 	| sed -e 's/, */, /g' -e 's/.$//' -e 's/.\{3\}$//'
 	```
 
->> This answer is still missing the ending with a dot (.)
+>> This answer is still missing the ending with a dot (.
+
+the curriculum says need bash file. 
+so, 
+```#!/bin/sh
+cat /etc/passwd | sed -e 's/#.*//' -e 's/[ ^I]*$//' -e '/^$/ d' -e 's/:.*//g' \
+                                  | tr '\n' ',' | rev | tr "," "\n" | sort -r | tr "\n" ","  \
+                                  | sed -e 's/, */, /g' -e 's/.$//' -e 's/.\{3\}$//'
+echo ".")```
+
+i think it's better. by tkgshn
